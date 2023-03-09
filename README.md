@@ -1,6 +1,6 @@
-**Trello Workspace Info** ➡️ (https://trello.com/b/it3ghUCb/9-3-youtube-react-project)
+# 9-3_Group Eleven React-Youtube-Clone 
 
-**Group # 11** ➡️ 
+**<ins>Group # 11** ⤵️
 
 Amber King 
 
@@ -8,7 +8,21 @@ Jyoti Singh
 
 Ryan Fodera
 
-# Getting Started with Create React App
+**<ins>Trello Workspace Info** ⤵️
+
+(https://trello.com/b/it3ghUCb/9-3-youtube-react-project)
+
+ # Youtube Clone: 
+ **How does it work?** ⤵️
+
+This clone version of Youtube will allow the user to do the following:
+
+- lets user search for Youtube videos via YouTube API
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -77,4 +91,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
