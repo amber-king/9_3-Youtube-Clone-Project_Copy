@@ -1,6 +1,12 @@
 **Trello Workspace Info** ➡️ (https://trello.com/b/it3ghUCb/9-3-youtube-react-project)
 
-**Group # 11** ➡️ Amber King, Jyoti Singh & Ryan Fodera
+**Group # 11** ➡️ 
+
+Amber King 
+
+Jyoti Singh 
+
+Ryan Fodera
 
 # Getting Started with Create React App
 
