@@ -1,7 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+  
+  // helper function to test api key fucntionality -- v
+  const testYoutubeAPI = () => {
+    console.log(process.env.REACT_APP_YOTUBE_API_KEY)
+    //fetch('');
+  }
+
+  useEffect (()=>{
+    testYoutubeAPI()
+  })
+
   return (
     <div className="App">
       <header className="App-header">
