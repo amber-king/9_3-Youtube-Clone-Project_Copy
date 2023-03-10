@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { Router, Routes, Route} from "react-router-dom"
 import Home from "./Components/Home"
-import Nav from "./Compnents/Nav"
+// import Nav from "./Compnents/Nav"
 import About from "./Components/About"
 import Videos from "./Components/Videos"
+// import SelectedVids from "./Components/SoloVideo"
 
 function App() {
  
@@ -11,7 +12,8 @@ function App() {
   return (
     <div className="App">
      <Router>
-      <Nav />
+      {/* <Nav /> */}
+    
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About />} />
