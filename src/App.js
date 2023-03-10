@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect } from 'react';
+import SearchBar from './SearchBar';
 
 function App() {
   
