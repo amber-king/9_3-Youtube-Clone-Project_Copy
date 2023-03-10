@@ -1,18 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import { useEffect } from 'react';
+import React from 'react';
+
 
 function App() {
   
-  // TODO -> helper function to test api key fucntionality -- v
-  const testYoutubeAPI = () => {
-    console.log(process.env.REACT_APP_YOTUBE_API_KEY) //must attach this key to you app call for it function
-    //fetch('');
-  }
+  // // TODO -> helper function to test api key fucntionality -- v
+  // const testYoutubeAPI = () => {
+  //   console.log(process.env.REACT_APP_YOTUBE_API_KEY) //must attach this key to you app call for it function
+  //   //fetch('');
+  // }
 
-  useEffect (()=>{
-    testYoutubeAPI()
-  })
+  // useEffect (()=>{
+  //   testYoutubeAPI()
+  // })
 
   return (
     <div className="App">
