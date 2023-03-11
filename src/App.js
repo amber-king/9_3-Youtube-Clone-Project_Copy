@@ -1,9 +1,11 @@
 import React from 'react';
 import { Router, Routes, Route} from "react-router-dom"
 import Home from "./Components/Home"
-// import Nav from "./Compnents/Nav"
-import About from "./Components/About"
+
+import About from "./Components/about"
 import Videos from "./Components/Videos"
+import NavBar from "./Components/navbar"
+
 // import SelectedVids from "./Components/SoloVideo"
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
   return (
     <div className="App">
      <Router>
-      {/* <Nav /> */}
+      <NavBar />
     
       <Routes>
         <Route path="/" element={<Home/>} />
