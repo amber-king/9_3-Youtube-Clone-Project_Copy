@@ -4,6 +4,8 @@ import Home from "./Components/Home"
 import About from "./Components/about"
 import Videos from "./Components/Videos"
 import Navbar from "./Components/navbar"
+import SoloVideo from "./Components/SoloVideo"
+
 // import {useEffect} from "react"
 
 // import SelectedVids from "./Components/SoloVideo"
@@ -34,6 +36,7 @@ function App() {
         <Route path="/" element={<Home/>} /> */
         <Route path="/about" element={<About />} />
         <Route path="/video/:id" element={<Videos/>}  />
+        <Route path="/video/:id" element={<SoloVideo/>}  />
       </Routes>
      </Router>
     </div>
