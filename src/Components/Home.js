@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-
+// import "./allStyle.css"
 
 //  import Navbar from "./Components/navbar"
 
@@ -25,7 +25,13 @@ export default function Home() {
 
                 </form>
             </div>
-            <p> No Search Reasults Yet!, Please submit a search above!</p>
+            <div className="error-msg">
+                <p className="error-result">
+                    No Search Reasults Yet!, Please submit a search above!
+                </p>
+            </div>
+            
+
 
         </div>
     )

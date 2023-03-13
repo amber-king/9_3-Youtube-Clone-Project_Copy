@@ -5,6 +5,7 @@ import About from "./Components/about"
 import Videos from "./Components/Videos"
 import Navbar from "./Components/navbar"
 import SoloVideo from "./Components/SoloVideo"
+import "./Components/allStyle.css"
 
 // import {useEffect} from "react"
 

@@ -1,0 +1,18 @@
+.search-engine{
+margin: 20px;
+text-align: center;
+}
+
+.error-result{
+    background-color: lightgray;
+    text-align: center;
+    height: 40px;
+    width: auto;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.App {
+    background-color: grey;
+    
+}
