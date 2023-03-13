@@ -11,11 +11,11 @@ export default function Home() {
             {/* <Navbar/> */}
             <div className="search-engine">
                 {/* onSubmit={handle for click search}  */}
-                <form>
+                <form >
 
                     <input
 
-                        // onChange={handle for change search}
+                        // onChange={handle for change search} here
 
                         className="search-engine"
                         type="text"
