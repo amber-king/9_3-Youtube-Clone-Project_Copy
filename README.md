@@ -17,7 +17,11 @@ Ryan Fodera
 
 This clone version of Youtube will allow the user to do the following:
 
-- lets user search for Youtube videos via YouTube API
+- search for Youtube videos via YouTube API via a search bar
+(*user MUST type in their request or it will be an error*)
+
+- click result thumbnails and video title which will direct them to the desired video they clicked in a new page(*user can share this video as well*)
+
 
 
 

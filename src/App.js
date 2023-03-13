@@ -1,19 +1,24 @@
+<<<<<<< HEAD
 import logo from './logo.svg';
 import './App.css';
 import { useEffect } from 'react';
 import SearchBar from './SearchBar';
+=======
+import React from 'react';
+
+>>>>>>> 019964846eaeed845de7d3d6275d9ab6c36f4b63
 
 function App() {
   
-  // TODO -> helper function to test api key fucntionality -- v
-  const testYoutubeAPI = () => {
-    console.log(process.env.REACT_APP_YOTUBE_API_KEY) //must attach this key to you app call for it function
-    //fetch('');
-  }
+  // // TODO -> helper function to test api key fucntionality -- v
+  // const testYoutubeAPI = () => {
+  //   console.log(process.env.REACT_APP_YOTUBE_API_KEY) //must attach this key to you app call for it function
+  //   //fetch('');
+  // }
 
-  useEffect (()=>{
-    testYoutubeAPI()
-  })
+  // useEffect (()=>{
+  //   testYoutubeAPI()
+  // })
 
   return (
     <div className="App">
