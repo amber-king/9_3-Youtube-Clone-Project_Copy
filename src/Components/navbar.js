@@ -1,13 +1,13 @@
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <nav>
-            <NavLink to='/'>Home </NavLink>
+            {/* <NavLink to='/'>Home </NavLink> */}
 
             |
             
-            <NavLink to='/about'> About</NavLink>
+            {/* <NavLink to='/about'> About</NavLink> */}
         </nav>
     )
 }
