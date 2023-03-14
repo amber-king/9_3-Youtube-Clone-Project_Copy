@@ -1,12 +1,11 @@
 
-import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
-import SearchBar from './SearchBar';
+// import { useEffect } from 'react';
+// import SearchBar from './Components/SearchBar';
 
 
 
-import { Router, Routes, Route} from "react-router-dom"
+
 
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./Components/Home"
@@ -32,13 +31,9 @@ function App() {
   //   testYoutubeAPI()
   // })
 
-
-
-// ! for 3/14/2023 --v
-// ! put all forms on js files & make sure to import properly the data
-
   return (
     <div className="App">
+     
       <Router>
       <Navbar />
     
