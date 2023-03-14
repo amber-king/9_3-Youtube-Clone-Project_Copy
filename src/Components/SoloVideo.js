@@ -6,13 +6,18 @@
 // ? make a state for search & user search 
 
 
-import React from 'react'
-// import Youtube from "react-youtube"
-// import { Link, useParams } from "react-router-dom"
+import React, {useEffect,useState} from 'react'
+import Youtube from "react-youtube"
+import {useParams } from "react-router-dom"
 
 
-export default function SoloVideo() {
+export default function SoloVideo({solovid}) {
     console.log("test")
+    const {id} = useParams()
+    const [soloVideo, setSoloVideo] = useState([])
+    
+
+
     // const URL = process.env.REACT_APP_YOUTUBE_API_KEY
     // const { id } = useParams() // -> to see if you can pull that video id from the 
     // useEffect(() => {
