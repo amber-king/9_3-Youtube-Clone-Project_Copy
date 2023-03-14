@@ -1,4 +1,13 @@
-import React from 'react';
+
+import logo from './logo.svg';
+import './App.css';
+import { useEffect } from 'react';
+import SearchBar from './SearchBar';
+
+
+
+import { Router, Routes, Route} from "react-router-dom"
+
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./Components/Home"
 import About from "./Components/about"
@@ -10,6 +19,7 @@ import "./Components/allStyle.css"
 //import Youtube from "react-youtube"
 //  import {useEffect} from "react"
 // import SelectedVids from "./Components/SoloVideo"
+
 
 function App() {
   // // TODO -> helper function to test api key fucntionality -- v
