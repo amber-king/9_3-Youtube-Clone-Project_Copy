@@ -1,36 +1,44 @@
-<<<<<<< HEAD
-import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
-import SearchBar from './SearchBar';
-=======
-import React from 'react';
-<<<<<<< HEAD
+// import { useEffect } from 'react';
+// import SearchBar from './SearchBar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
->>>>>>> 019964846eaeed845de7d3d6275d9ab6c36f4b63
-=======
-import { Router, Routes, Route} from "react-router-dom"
-import Home from "./Components/Home"
-// import Nav from "./Compnents/Nav"
-import About from "./Components/About"
-import Videos from "./Components/Videos"
+import Home from './Components/Home';
+import About from './Components/about';
+import Videos from './Components/Videos';
+import Navbar from './Components/navbar';
+import SoloVideo from './Components/SoloVideo';
+import './Components/allStyle.css';
+
+// import {useEffect} from "react"
+
 // import SelectedVids from "./Components/SoloVideo"
->>>>>>> 7d8a58f64e0b7a90524b9ae669a1cff613f4d808
 
 function App() {
- 
+  // // TODO -> helper function to test api key fucntionality -- v
+  // const testYoutubeAPI = () => {
+  //   console.log(process.env.REACT_APP_YOUTUBE_API_KEY) //must attach this key to you app call for it function
+  //   //fetch('');
+  // }
+
+  // useEffect (()=>{
+  //   testYoutubeAPI()
+  // })
 
   return (
     <div className="App">
-     <Router>
-      {/* <Nav /> */}
-    
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About />} />
-        <Route path="/video/:id" element={<Videos/>}  />
-      </Routes>
-     </Router>
+      <Router>
+        <Navbar />
+
+        <Routes>
+          {/* might be an option to hook to app.js if not the lines underneath --v */}
+          {/* <Route path="/navbar" element={<NavBar/>}/> */}
+          <Route path="/" element={<Home />} /> */
+          <Route path="/about" element={<About />} />
+          <Route path="/video/:id" element={<Videos />} />
+          <Route path="/video/:id" element={<SoloVideo />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

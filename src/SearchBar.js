@@ -23,8 +23,6 @@ const Search = ({ setVideos }) => {
 //       <button onClick={() => fetchVideos(searchBar, setVideos)}>Search</button>
 //     </div>
 //   );
-// };
+};
 
 export default Search;
-
-//
