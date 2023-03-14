@@ -1,7 +1,7 @@
 
-import logo from './logo.svg';
-import './App.css';
-import { useEffect } from 'react';
+// import logo from './logo.svg';
+// import './App.css';
+// import { useEffect } from 'react';
  import SearchBar from './Components/SearchBar';
 
 
@@ -15,9 +15,15 @@ import Videos from "./Components/Videos"
 import SoloVideo from "./Components/SoloVideo"
 import "./Components/allStyle.css"
 
+// <<<<<<< modal-RF
 
 
-import SelectedVids from "./Components/SoloVideo"
+// // import SelectedVids from "./Components/SoloVideo"
+// =======
+// //import Youtube from "react-youtube"
+// //  import {useEffect} from "react"
+// // import SelectedVids from "./Components/SoloVideo"
+// >>>>>>> main
 
 
 function App() {
@@ -33,23 +39,39 @@ function App() {
 
 
 
-
+// ! for 3/14/2023 --v
+// ! put all forms on js files & make sure to import properly the data
 
   return (
     <div className="App">
-Hello
-<Router>
-<NavBar />
+// <<<<<<< modal-RF
+// Hello
+// <Router>
+// <NavBar />
 
-<Routes>
-  might be an option to hook to app.js if not the lines underneath --v
-  <Route path="/navbar" element={<NavBar/>}/> 
-  <Route path="/" element={<Home/>} />
-  <Route path="/about" element={<About />} />
-  <Route path="/video/:id" element={<Videos/>}  />
-  <Route path="/video/:id" element={<SoloVideo/>}  />
-</Routes>
-</Router>
+// <Routes>
+//   might be an option to hook to app.js if not the lines underneath --v
+//   <Route path="/navbar" element={<NavBar/>}/> 
+//   <Route path="/" element={<Home/>} />
+//   <Route path="/about" element={<About />} />
+//   <Route path="/video/:id" element={<Videos/>}  />
+//   <Route path="/video/:id" element={<SoloVideo/>}  />
+// </Routes>
+// </Router>
+// =======
+      <Router>
+      <Navbar />
+    
+      <Routes>
+        {/* might be an option to hook to app.js if not the lines underneath --v */}
+        {/* <Route path="/navbar" element={<NavBar/>}/> */} 
+        <Route path="/" element={<Home/>} /> */
+        <Route path="/about" element={<About />} />
+        <Route path="/video" element={<Videos/>}  />
+        <Route path="/video/:id" element={<SoloVideo/>}  />
+      </Routes>
+     </Router>
+//>>>>>>> main
     </div>
   );
 }
