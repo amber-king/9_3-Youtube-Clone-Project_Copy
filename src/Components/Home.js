@@ -1,10 +1,11 @@
 import React, { useState } from "react"
+import SearchBar from "./SearchBar"
 // import "./allStyle.css"
 
 //  import Navbar from "./Components/navbar"
 
 export default function Home() {
-    console.log("test")
+    const [videoList, setVideoList] = useState([])
 
     return (
         <div className="home-pg">
