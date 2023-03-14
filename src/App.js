@@ -7,8 +7,8 @@ import Navbar from "./Components/navbar"
 import SoloVideo from "./Components/SoloVideo"
 import "./Components/allStyle.css"
 
-// import {useEffect} from "react"
-
+//import Youtube from "react-youtube"
+//  import {useEffect} from "react"
 // import SelectedVids from "./Components/SoloVideo"
 
 function App() {
@@ -24,7 +24,8 @@ function App() {
 
 
 
-
+// ! for 3/14/2023 --v
+// ! put all forms on js files & make sure to import properly the data
 
   return (
     <div className="App">
@@ -36,7 +37,7 @@ function App() {
         {/* <Route path="/navbar" element={<NavBar/>}/> */} 
         <Route path="/" element={<Home/>} /> */
         <Route path="/about" element={<About />} />
-        <Route path="/video/:id" element={<Videos/>}  />
+        <Route path="/video" element={<Videos/>}  />
         <Route path="/video/:id" element={<SoloVideo/>}  />
       </Routes>
      </Router>
