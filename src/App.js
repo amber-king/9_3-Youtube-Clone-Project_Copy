@@ -10,7 +10,7 @@ import { Router, Routes, Route} from "react-router-dom"
 
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./Components/Home"
-import About from "./Components/about"
+import About from "./Components/About"
 import Videos from "./Components/Videos"
 import Navbar from "./Components/navbar"
 import SoloVideo from "./Components/SoloVideo"
