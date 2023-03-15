@@ -1,12 +1,11 @@
 
-import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
-import SearchBar from './SearchBar';
+// import { useEffect } from 'react';
+// import SearchBar from './Components/SearchBar';
 
 
 
-import { Router, Routes, Route} from "react-router-dom"
+
 
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./Components/Home"
@@ -16,8 +15,8 @@ import Navbar from "./Components/navbar"
 import SoloVideo from "./Components/SoloVideo"
 import "./Components/allStyle.css"
 
-// import {useEffect} from "react"
-
+//import Youtube from "react-youtube"
+//  import {useEffect} from "react"
 // import SelectedVids from "./Components/SoloVideo"
 
 
@@ -32,12 +31,9 @@ function App() {
   //   testYoutubeAPI()
   // })
 
-
-
-
-
   return (
     <div className="App">
+     
       <Router>
       <Navbar />
     
@@ -46,7 +42,7 @@ function App() {
         {/* <Route path="/navbar" element={<NavBar/>}/> */} 
         <Route path="/" element={<Home/>} /> */
         <Route path="/about" element={<About />} />
-        <Route path="/video/:id" element={<Videos/>}  />
+        <Route path="/video" element={<Videos/>}  />
         <Route path="/video/:id" element={<SoloVideo/>}  />
       </Routes>
      </Router>

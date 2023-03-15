@@ -25,6 +25,6 @@ const Search = ({ setVideos }) => {
 //   );
 // };
 
-export default Search;
 
-//
+}
+export default Search;
