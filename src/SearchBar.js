@@ -7,23 +7,25 @@ class SearchBar extends React.Component {
     this.setState = {};
   }
   render() {
+    const { searchHandler, inputHandler, userInput } = this.props;
     return (
       <div>
         <form onSubmit={(event) => searchHandler(event)}>
+          <div className='search-container'> 
           <input
+             onChange={inputHandler}
+            value={userInput}
             type="text"
-            name="search"
-            placeholder="Search..."
-            autoComplete="off"
-          ></input>
-          <button>Search</button>
-        </form>
-      </div>
+            placeholder="Search">
+          </input>
+
+          <button className='search-button' id="submit-button" type="submit"  >
+            <img className='search-icon' src='' ></img>
+          </button>
+        </div>
+      </form>
     );
-  }
-}
+
+
 
 export default SearchBar;
-
-//make api call for search query
-//
