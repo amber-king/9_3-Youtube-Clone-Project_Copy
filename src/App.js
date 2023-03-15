@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './App.css';
 // import { useEffect } from 'react';
 // import SearchBar from './SearchBar';
@@ -9,10 +10,32 @@ import Videos from './Components/Videos';
 import Navbar from './Components/navbar';
 import SoloVideo from './Components/SoloVideo';
 import './Components/allStyle.css';
+=======
 
-// import {useEffect} from "react"
+import './App.css';
+// import { useEffect } from 'react';
+// import SearchBar from './Components/SearchBar';
 
+
+
+
+
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Home from "./Components/Home"
+import About from "./Components/about"
+import Videos from "./Components/Videos"
+import Navbar from "./Components/navbar"
+import SoloVideo from "./Components/SoloVideo"
+import "./Components/allStyle.css"
+>>>>>>> 9ff24d15c99012689cd6153ce97ca5d93029bbfc
+
+//import Youtube from "react-youtube"
+//  import {useEffect} from "react"
 // import SelectedVids from "./Components/SoloVideo"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9ff24d15c99012689cd6153ce97ca5d93029bbfc
 
 function App() {
   // // TODO -> helper function to test api key fucntionality -- v
@@ -27,7 +50,9 @@ function App() {
 
   return (
     <div className="App">
+     
       <Router>
+<<<<<<< HEAD
         <Navbar />
 
         <Routes>
@@ -39,6 +64,19 @@ function App() {
           <Route path="/video/:id" element={<SoloVideo />} />
         </Routes>
       </Router>
+=======
+      <Navbar />
+    
+      <Routes>
+        {/* might be an option to hook to app.js if not the lines underneath --v */}
+        {/* <Route path="/navbar" element={<NavBar/>}/> */} 
+        <Route path="/" element={<Home/>} /> */
+        <Route path="/about" element={<About />} />
+        <Route path="/video" element={<Videos/>}  />
+        <Route path="/video/:id" element={<SoloVideo/>}  />
+      </Routes>
+     </Router>
+>>>>>>> 9ff24d15c99012689cd6153ce97ca5d93029bbfc
     </div>
   );
 }
