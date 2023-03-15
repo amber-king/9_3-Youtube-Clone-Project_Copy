@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { Link } from "react-router-dom";
+import "./Videos.css"
 
 export default function videoViewPage({ videos,search }) {
     return (

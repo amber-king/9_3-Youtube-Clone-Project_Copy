@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import SearchBar from "./SearchBar"
-// import "./allStyle.css"
+import "./Home.css"
 
 //  import Navbar from "./Components/navbar"
 

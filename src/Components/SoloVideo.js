@@ -7,6 +7,7 @@
 import React, { useState, useEffect } from 'react'
 //  import { useParams } from 'react-router-dom'
 import { Link } from "react-router-dom"
+import "./SoloVideo.css"
 
 
 export default function SoloVideo({ setSearchVid, searchVid, search }) {
