@@ -1,15 +1,19 @@
-// import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav>
-            {/* <NavLink to='/'>Home </NavLink> */}
+        <nav className="navbar">
+            <img src='https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png'
+                alt="YouTube Logo"
+            />
 
-            |
-            
-            {/* <NavLink to='/about'> About</NavLink> */}
+            <NavLink exact to='/'>
+                Home 
+            </NavLink>
+
+            |<NavLink to='/about'>About</NavLink>
         </nav>
-    )
-}
+    );
+};
 
 export default Navbar; 
