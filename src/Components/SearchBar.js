@@ -9,22 +9,22 @@ const Search = ({ setVideos }) => {
     setSearchBar(title);
   };
 
-//   return (
-//     <div>
-//       <label htmlFor="searchTitle">
-//         Search Videos:
-//         <input
-//           type="text"
-//           value={searchBar}
-//           id="searchBar"
-//           onChange={handleTextChange}
-//         />
-//       </label>
-//       <button onClick={() => fetchVideos(searchBar, setVideos)}>Search</button>
-//     </div>
-//   );
-// };
+  // return (
+  //   <div>
+  //     <label htmlFor="searchTitle">
+  //       Search Videos:
+  //       <input
+  //         type="text"
+  //         value={searchBar}
+  //         id="searchBar"
+  //         onChange={handleTextChange}
+  //       />
+  //     </label>
+  //     <button onClick={() => fetchVideos(searchBar, setVideos)}>Search</button>
+  //   </div>
+  // );
+};
 
 
-}
+
 export default Search;
