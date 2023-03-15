@@ -1,5 +1,4 @@
 
-import logo from './logo.svg';
 import './App.css';
 import { useEffect } from 'react';
  import SearchBar from './Components/SearchBar';
@@ -30,10 +29,6 @@ function App() {
   // useEffect (()=>{
   //   testYoutubeAPI()
   // })
-
-
-
-
 
   return (
     <div className="App">

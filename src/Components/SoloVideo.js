@@ -9,27 +9,26 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import "./SoloVideo.css"
 
+export default function SoloVideo() {
+    console.log("test")
+    const { id } = useParams()
 
-export default function SoloVideo({ setSearchVid, searchVid, search }) {
-    const URL = process.env.REACT_APP_YOUTUBE_API_KEY
-
-    // const [searchVid, setSearchVid] = useState([])
-    // const {id} = useParams()
     useEffect(() => {
-        fetch(`https://www.googleapis.com/youtube/v3/videos?id=${search}&key=${URL}&part=snippet,player`)
-            .then((response) => response.json())
-            .then((response) => {
-                setSearchVid(searchVid)
-                console.log("test")
-
-            })
-            .catch((error) => {
-                console.log(error)
-            }, [])
-    })
+        window.localStorage.setItem(id, JSON.stringify())
+    }, [id])
 
 
-    return null;
+    return (
+        <div className="clicked-vid">
+            <h3>Selected Video</h3>
+
+            <form >
+                <Youtube videoId={id} />
+            </form>
+
+        </div>
+    )
+
 
 }
 
