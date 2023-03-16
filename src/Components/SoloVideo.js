@@ -5,7 +5,7 @@
 // ? fetching the selected video via users search; using api key w/i fecth info
 // ? make a state for search & user search 
 import React, { useState, useEffect } from 'react'
-//  import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { Link } from "react-router-dom"
 import "./SoloVideo.css"
 

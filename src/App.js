@@ -13,7 +13,7 @@ import Videos from "./Components/Videos"
  import NavBar from "./Components/navbar"
 import SoloVideo from "./Components/SoloVideo"
 import "./Components/allStyle.css"
-
+import Navbar from "./Components/navbar"
 
 
 import SelectedVids from "./Components/SoloVideo"
@@ -32,19 +32,18 @@ function App() {
 
   return (
     <div className="App">
-Hello
-<Router>
-<NavBar />
-
-<Routes>
-  might be an option to hook to app.js if not the lines underneath --v
-  <Route path="/navbar" element={<NavBar/>}/> 
-  <Route path="/" element={<Home/>} />
-  <Route path="/about" element={<About />} />
-  <Route path="/video/:id" element={<Videos/>}  />
-  <Route path="/video/:id" element={<SoloVideo/>}  />
-</Routes>
-</Router>
+      <Router>
+      <Navbar />
+    
+      <Routes>
+        {/* might be an option to hook to app.js if not the lines underneath --v */}
+        {/* <Route path="/navbar" element={<NavBar/>}/> */} 
+        <Route path="/" element={<Home/>} /> */
+        <Route path="/about" element={<About />} />
+        <Route path="/video" element={<Videos/>}  />
+        <Route path="/video/:id" element={<SoloVideo/>}  />
+      </Routes>
+     </Router>
     </div>
   );
 }

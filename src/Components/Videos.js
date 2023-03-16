@@ -6,7 +6,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "./Videos.css"
 
-    return (
+    function Videos (){
+        return (
         <section className="video-shown">
             <h3>Video Listing</h3>
 
@@ -40,6 +41,6 @@ import "./Videos.css"
 
 }
 
-
+export default Videos
 
 
