@@ -5,6 +5,9 @@
 // import "./allStyle.css"
 //  import Navbar from "./Components/navbar"
 
+// ! URL of Live Server to see pg -> http://localhost:3000
+
+// * 3/16/2023 -> shows home page with links to the about page and a search enging form 
 export default function Home() {
     console.log("test")
 

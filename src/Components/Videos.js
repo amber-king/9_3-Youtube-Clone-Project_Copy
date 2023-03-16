@@ -2,33 +2,37 @@
 // TODO map through videos connected to user search
 // ! I can see the individual "View" page of a video. 
 
+// ! URL of Live Server to see pg -> http://localhost:3000/video/
+
+// * 3/16/2023 -> should show the video listing pg after user inputs a search but not lick on functionality yet, unclear of fetch URL -AK
+
 import React from 'react';
-import Link from "react-router-dom" 
-// import { useParams } from "react-router-dom";
-// import { useState, useEffect } from "react"
+// import Link from "react-router-dom" 
+import { useParams } from "react-router-dom";
+ import { useState, useEffect } from "react"
 
 //  import Youtube from "react-youtube"
 
 export default function Videos({ videos }) {
     console.log("test")
 
-    // const { id } = useParams()
-    // //  const urlKey = process.env.REACT_APP_YOUTUBE_API_KEY
-    // // const [inputSearch, setInputSearch] = useState([])
-    // const [listedVids, setListedVids] = useState([])
+    const { id } = useParams()
+    //  const urlKey = process.env.REACT_APP_YOUTUBE_API_KEY
+    // const [inputSearch, setInputSearch] = useState([])
+    const [listedVids, setListedVids] = useState([])
 
-    // useEffect(() => {
-    //     fetch(`http://youtube.googleapis.com`)
+    useEffect(() => {
+        fetch(``)
         
-    //         .then((response) => response.json())
-    //         .then((response) => {
-    //             setListedVids(response.items)
-    //             console.log(response.items)
-    //         })
-    //         .catch((error) => {
-    //             console.log(error)
-    //         })
-    // })
+            .then((response) => response.json())
+            .then((response) => {
+                setListedVids(response.items)
+                console.log(response.items)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    })
 
 
     return (
@@ -36,7 +40,7 @@ export default function Videos({ videos }) {
             <h3>Video Listing</h3>
 
 
-            {/* {listedVids.length > 0 && listedVids.map((videos) => {
+            {listedVids.length > 0 && listedVids.map((videos) => {
                 return (
                     <ul>
                         <li>
@@ -59,7 +63,7 @@ export default function Videos({ videos }) {
 
                     // </div>
                 )
-            })} */}
+            })}
         </section>
     )
 
