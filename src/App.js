@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './App.css';
 // import { useEffect } from 'react';
 // import SearchBar from './SearchBar';
@@ -12,14 +13,12 @@ import SoloVideo from './Components/SoloVideo';
 import './Components/allStyle.css';
 =======
 
+=======
+// TODO Main js where all the routes are & imports needed -AK
+>>>>>>> 5b237133a96c4c05639735b8fac3cd9cbbd473f2
 import './App.css';
 // import { useEffect } from 'react';
-// import SearchBar from './Components/SearchBar';
-
-
-
-
-
+//  import SearchBar from './Components/SearchBar';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./Components/Home"
 import About from "./Components/about"
