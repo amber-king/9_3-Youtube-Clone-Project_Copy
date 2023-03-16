@@ -12,15 +12,20 @@ import Youtube from "react-youtube"
 import { useParams } from "react-router-dom"
 
 export default function SoloVideo() {
-    console.log("test")
-    const { id } = useParams() 
+    console.log("test")  // ? testing to see if function is connective to page, console.log to see in inspect
+    const { id } = useParams() // * useParams gives us access to the parameters we set in out paths in our routing
 
+    
+// *  effect that fetches clicked video & sets it according to the search request 
+//  ? this will be a temp. storage of the video playing
+// ? could be used too to temp. store comments the users but in a faux comment section on the pg 
     useEffect(() => {
         window.localStorage.setItem(id, JSON.stringify())
     }, [id])
 
-
-    return (
+// * returns the physical video player that wher the users video will be clickable to play 
+   
+return (
         <div className="clicked-vid">
             <h3>Selected Video</h3>
 

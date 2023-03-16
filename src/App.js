@@ -1,12 +1,7 @@
-
+// TODO Main js where all the routes are & imports needed -AK
 import './App.css';
 // import { useEffect } from 'react';
 //  import SearchBar from './Components/SearchBar';
-
-
-
-
-
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./Components/Home"
 import About from "./Components/about"
