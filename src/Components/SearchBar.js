@@ -1,28 +1,43 @@
-import { useState } from 'react';
-// import { fetchVideos } from '../api/fetch';
+import React from 'react';
+import './SearchBar.css';
 
-const Search = ({ setVideos }) => {
-  const [searchBar, setSearchBar] = useState('');
+class SearchBar extends React.Component {
+  constructor() {
+    super();
 
-  const handleTextChange = (e) => {
-    const title = e.target.value;
-    setSearchBar(title);
+    this.state = {
+      search: '',
+    };
+  }
+  handleSelectChange = (event) => {
+    const { value } = event.target;
+    this.setState({
+      search: value,
+    });
   };
 
-//   return (
-//     <div>
-//       <label htmlFor="searchTitle">
-//         Search Videos:
-//         <input
-//           type="text"
-//           value={searchBar}
-//           id="searchBar"
-//           onChange={handleTextChange}
-//         />
-//       </label>
-//       <button onClick={() => fetchVideos(searchBar, setVideos)}>Search</button>
-//     </div>
-//   );
-// };
+  handleFormSubmit = (event) => {
+    event.preventDefault();
+    const { searchForVideo } = this.props;
+    searchForVideo(this.state.search);
+    this.setState({});
+  };
 
-export default Search;
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.handleFormSubmit}>
+          <input
+            type="text"
+            name="search"
+            onChange={this.handleSelectChange}
+            placeholder="Search..."
+            autoComplete="off"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    );
+  }
+}
+export default SearchBar;
