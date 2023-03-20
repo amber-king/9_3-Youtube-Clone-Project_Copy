@@ -1,11 +1,8 @@
+// TODO Main js where all the routes are & imports needed -AK
 
 import './App.css';
-import { useEffect } from 'react';
- import SearchBar from './Components/SearchBar';
-
-
-
-
+// import { useEffect } from 'react';
+// import SearchBar from './Components/SearchBar';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./Components/Home"
 import About from "./Components/About"
@@ -13,10 +10,7 @@ import Videos from "./Components/Videos"
  import NavBar from "./Components/navbar"
 import SoloVideo from "./Components/SoloVideo"
 import "./Components/allStyle.css"
-import Navbar from "./Components/navbar"
 
-
-import SelectedVids from "./Components/SoloVideo"
 
 
 function App() {
@@ -33,10 +27,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar />
-    
-      <Routes>
-        {/* might be an option to hook to app.js if not the lines underneath --v */}
+
+        <Navbar />
+    <Routes>
+       {/* might be an option to hook to app.js if not the lines underneath --v */}
         {/* <Route path="/navbar" element={<NavBar/>}/> */} 
         <Route path="/" element={<Home/>} /> */
         <Route path="/about" element={<About />} />
@@ -44,6 +38,7 @@ function App() {
         <Route path="/video/:id" element={<SoloVideo/>}  />
       </Routes>
      </Router>
+
     </div>
   );
 }

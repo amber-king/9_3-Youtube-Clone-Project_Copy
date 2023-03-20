@@ -31,9 +31,9 @@ body {
 
 .video-thumbnail {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
+  padding-bottom: 56.25%;
+ height: 0;
+ overflow: hidden;
 }
 
 .video-thumbnail img {
@@ -58,4 +58,6 @@ body {
 
 .video-author {
     margin-bottom: 4px;
+
 }
+

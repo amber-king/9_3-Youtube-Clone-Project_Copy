@@ -1,18 +1,22 @@
 
-import React, { useState } from "react"
+// import React, { useState } from "react"
 import SearchBar from "./SearchBar"
 import "./Home.css"
 
 // import React, { useState } from "react"
 // import {Navigate} from "react-router-dom"
 //import SoloVideo from "./SoloVideo"
-
 // import "./allStyle.css"
 //  import Navbar from "./Components/navbar"
 
-export default function Home() {
-    const [videoList, setVideoList] = useState([])
+// ! URL of Live Server to see pg -> http://localhost:3000
+// * 3/16/2023 -> shows home page with links to the about page and a search enging form - AK
 
+export default function Home() {
+
+    console.log("test") // ? testing to see if function is connective to page, console.log to see in inspect
+
+//   * standard form for a search engine where user inputs desires search info
     return (
         <div className="home-pg">
             {/* <Navbar/> */}
