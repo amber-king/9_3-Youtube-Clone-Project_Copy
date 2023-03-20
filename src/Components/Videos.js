@@ -2,6 +2,7 @@
 // TODO map through videos connected to user search
 // ! I can see the individual "View" page of a video. 
 
+
 // ! URL of Live Server to see pg -> http://localhost:3000/video/
 
 // * 3/16/2023 -> should show the video listing pg after user inputs a search but not lick on functionality yet, unclear of fetch URL -AK
@@ -9,8 +10,7 @@
 import React from 'react';
 // import Link from "react-router-dom" 
 import { useParams } from "react-router-dom";
- import { useState, useEffect } from "react"
-
+import { useState, useEffect } from "react"
 //  import Youtube from "react-youtube"
 
 export default function Videos({ videos }) {
@@ -38,11 +38,16 @@ export default function Videos({ videos }) {
 
 // * returns the related listed videos to topic searched
     return (
+
         <section className="video-shown">
             <h3>Video Listing</h3>
 
 
+
+            {/* {listedVids.length > 0 && listedVids.map((videos) => {
+
             {listedVids.length > 0 && listedVids.map((videos) => {
+
                 return (
                     <ul>
                         <li>
@@ -65,7 +70,7 @@ export default function Videos({ videos }) {
 
                     // </div>
                 )
-            })}
+            })} */}
         </section>
     )
 

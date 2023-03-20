@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './AlertErrMsg.css';
+import './AlertErrMsg.css'
 
 const useErrorModal = (ErrorModalComponent) => {
   const [showErrorModal, setShowErrorModal] = useState(false);
